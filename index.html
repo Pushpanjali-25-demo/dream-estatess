@@ -1,24 +1,121 @@
-# Step 1: Create project directory
-mkdir RealEstatePro
-cd RealEstatePro
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Pro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header">
+      <h1 class="logo">RealEstatePro</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#agents">Agents</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-# Step 2: Initialize project (assuming React + TailwindCSS setup)
-npx create-react-app real-estate-pro
-cd real-estate-pro
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Find Your Dream Home</h2>
+      <p>Browse listings in top locations with ease</p>
+      <a href="#listings" class="btn">View Listings</a>
+    </div>
+  </section>
 
-# Step 3: Install TailwindCSS and other dependencies
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We help people find their perfect home. With expert agents and top-tier listings, we guide you every step of the way.</p>
+    </div>
+  </section>
 
-# Configure Tailwind (tailwind.config.js)
-# Add "./src/**/*.{js,jsx,ts,tsx}" to content array
+  <!-- Listings Section -->
+  <section class="listings" id="listings">
+    <div class="container">
+      <h2>Featured Listings</h2>
+      <div class="card-grid">
+        <div class="property-card">
+          <img src="house1.jpg" alt="House 1">
+          <h3>Luxury Villa in LA</h3>
+          <p>$1,200,000 • 4 Beds • 3 Baths</p>
+        </div>
+        <div class="property-card">
+          <img src="house2.jpg" alt="House 2">
+          <h3>Modern Apartment in NYC</h3>
+          <p>$850,000 • 2 Beds • 2 Baths</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-# Step 4: Setup folder structure
-mkdir src/assets src/pages src/components src/data
+  <!-- Agents Section -->
+  <section class="agents" id="agents">
+    <div class="container">
+      <h2>Our Agents</h2>
+      <div class="card-grid">
+        <div class="agent-card">
+          <img src="agent1.jpg" alt="Agent 1">
+          <h3>Jane Doe</h3>
+          <p>Senior Agent</p>
+        </div>
+        <div class="agent-card">
+          <img src="agent2.jpg" alt="Agent 2">
+          <h3>John Smith</h3>
+          <p>Luxury Specialist</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-# Step 5: Install optional UI libraries
-npm install react-router-dom @heroicons/react swiper react-icons
+  <!-- Blog Section -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2>From Our Blog</h2>
+      <div class="card-grid">
+        <div class="blog-card">
+          <h3>5 Home Buying Tips</h3>
+          <p>Everything you need to know before making a purchase.</p>
+        </div>
+        <div class="blog-card">
+          <h3>Top Neighborhoods in 2025</h3>
+          <p>Explore where to invest this year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-# Step 6: Start development server
-npm start
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 RealEstatePro. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
